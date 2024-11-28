@@ -1,0 +1,54 @@
+.task-container {
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-container h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.task-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-container ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.task-container ul li:hover {
+  background-color: #f0f8ff;
+  transform: scale(1.02);
+}
+
+.task-container ul li input[type="checkbox"] {
+  transform: scale(1.2);
+}
+
+.task-container ul li button {
+  background-color: transparent;
+  border: none;
+  color: #ff3b3b;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.task-container ul li button:hover {
+  color: #ff0000;
+}

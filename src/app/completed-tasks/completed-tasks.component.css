@@ -1,0 +1,15 @@
+.completed-task-container {
+  background-color: #e9f7ef;
+  color: #6c757d;
+  text-decoration: line-through;
+  padding: 0.8rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.completed-task-container ul li {
+  background-color: #e9f7ef;
+  border: 1px solid #d3e8d9;
+  text-decoration: line-through;
+  color: #6c757d;
+}

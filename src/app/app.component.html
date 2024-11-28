@@ -1,27 +1,12 @@
-<main class="todo-container">
-  <div class="add-task">
-    <input 
-      [(ngModel)]="newTask" 
-      placeholder="Enter new task..." 
-      (keydown)="handleKeyPress($event)"
-    />
-    <button (click)="addTask()">Add</button>
+<div class="container">
+  <nav>
+    <button (click)="currentView = 'tasks'">Task List</button>
+    <button (click)="currentView = 'completed'">Completed Tasks</button>
+  </nav>
+  <div *ngIf="currentView === 'tasks'">
+    <app-task-list></app-task-list>
   </div>
-
-  <ul class="task-list">
-    <li
-      *ngFor="let todoItem of todoList; let i = index"
-      [ngClass]="{ completed: todoItem.completed }"
-    >
-      <input
-        type="checkbox"
-        [(checked)]="todoItem.completed"
-        (change)="toggleCompleted(i)"
-      />
-      <span [class.completed]="todoItem.completed">{{ todoItem.task }}</span>
-      <button (click)="deleteTask(todoItem.id)">Delete</button>
-    </li>
-  </ul>
-</main>
-
-<router-outlet />
+  <div *ngIf="currentView === 'completed'">
+    <app-completed-tasks></app-completed-tasks>
+  </div>
+</div>
