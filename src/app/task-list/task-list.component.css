@@ -75,7 +75,6 @@
   animation: slideDown 1s forwards; 
 }
 
-
 @keyframes slideDown {
   from {
     margin-top: -100px; 
@@ -87,6 +86,29 @@
   }
 }
 
-.edit-button {
+.modal-btn1{
+  padding: 10px;
   margin: 5px;
+  border-radius: 15px;
+  color: #ffffff;
+  background-color: #11cd11;
+  font-weight: bold;
+  border: 1px solid white;
+}
+
+.modal-btn2{
+  padding: 10px;
+  margin: 5px;
+  border-radius: 15px;
+  color: #ffffff;
+  background-color: #ff0000;
+  font-weight: bold;
+  border: 1px solid white;
+}
+
+.modal-input{
+  border: 1px solid darkcyan;
+  padding: 16px;
+  max-width: 170px;
+  border-radius: 21px;
 }

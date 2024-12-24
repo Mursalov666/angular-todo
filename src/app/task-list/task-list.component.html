@@ -22,8 +22,8 @@
 <div class="modal" *ngIf="editingTask">
   <div class="modal-content">
     <h3>Edit Task</h3>
-      <input matInput [(ngModel)]="editingTask.description" />
-    <button class="edit-btn" (click)="saveTask()">Save</button>
-    <button class="edit-btn" (click)="closeEditModal()">Cancel</button>
+      <input class="modal-input" [(ngModel)]="editingTask.description" /> <br>
+    <button class="modal-btn1" (click)="saveTask()">Save</button>
+    <button class="modal-btn2" (click)="closeEditModal()">Cancel</button>
   </div>
 </div>
